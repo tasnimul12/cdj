@@ -9,8 +9,8 @@
     metatags.description = blurb;
 
     const team = [
-      { name: 'Ahmed Sultan', year: 21, role: 'Co-Editor in Chief', desc: 'Annie is an <i>Information Science</i> major and <i>English</i> minor. She logs movies she watches, and of the <b>322</b> she\'s logged so far, her average rating is <b>3.44 stars</b>.' },
-      { name: 'Dana Gong', year: 22, role: 'Co-Editor in Chief', desc: 'Dana is an <i>Information Science</i> major and <i>PAM</i> minor. She eats oatmeal <b>364/365</b> days of the year.' },
+      { name: 'Ahmed Sultan', year: 24, role: 'President', desc: 'Fill b tag emphasizes i tag major.' },
+      { name: 'Carly Hu', year: 24, role: 'Co-Editor in Chief', desc: 'Dana is an <i>Information Science</i> major and <i>PAM</i> minor. She eats oatmeal <b>364/365</b> days of the year.' },
       { name: 'Melanie Walsh', role: 'Faculty Mentor', desc: 'Melanie is a <i>Postdoctoral Associate in Information Science</i>. She has visited <b>9 National Parks</b> and encountered a running total of <b>0 grizzly bears</b>.' },
       { name: 'Megan Rochlin', year: 21, role: 'Deputy Editor', desc: 'Megan is majoring in <i>English</i> and <i>Computer Science</i> and minoring in <i>Creative Writing</i>. Since 2012, she has written <b>8 (bad) novels</b> with a total of <b>377,097 words</b>.' },
       { name: 'Liying Wang', year: 22, role: 'Marketing/Graphics Editor', desc: 'Liying is an <i>Information Science</i> major, minoring in <i>Visual Studies</i> and <i>Business</i>. She has lived in <b>Japan for 14%</b> of her life, <b>Canada for 10%</b>, and the <b>US for 76%</b>.' },

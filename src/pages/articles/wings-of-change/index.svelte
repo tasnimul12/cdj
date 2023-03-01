@@ -955,13 +955,13 @@
     color: #C6AC8F;
   }
 
-  a {
-    text-decoration: underline;
+  /* a { */
+    /* text-decoration: underline; */
 
-    &:hover {
+    /* hover {
       text-decoration: underline;
     }
-  }
+  } */
 
   #states_and_pi {
     display: flex;
@@ -1143,7 +1143,7 @@
   <div id="intro-image-text" class="intro-img-text">
     <div class="intro-img">
       <figure>
-        <img src={woodThrushGlow} alt="Wood Finch sitting on a branch, singing" width=74% style=>
+        <img src={woodThrushGlow} alt="Wood Finch sitting on a branch, singing" width=74%>
         <!-- <figcaption style ="color: #eae0d5; font-family: 'Open Sans', sans-serif;"> The Wood Finch is one of the most notorious North American Song Birds</figcaption> -->
       </figure>
     </div>
@@ -1171,7 +1171,7 @@
       <a href=https://www.allaboutbirds.org/guide/Wood_Thrush/maps-range> Source </a>
     </p>
     <p>
-      Over the last 50 years, the Wood Thrush population has been in decline. Every year, the number of Wood Thrushes declines about 2%. To further investigate the effects of climate change on this vulnerable species and its food source, we turned to the data collected by <a href="https://ebird.org/home" target="_blank">eBird at the Cornell Lab of Ornithology.</a> Every day, millions of bird sightings are recorded into the system by bird enthusiasts and experts around the globe.
+      <!-- Over the last 50 years, the Wood Thrush population has been in decline. Every year, the number of Wood Thrushes declines about 2%. To further investigate the effects of climate change on this vulnerable species and its food source, we turned to the data collected by <a href="https://ebird.org/home" target="_blank">eBird at the Cornell Lab of Ornithology.</a> Every day, millions of bird sightings are recorded into the system by bird enthusiasts and experts around the globe. -->
     </p>
   </div>
   <br />

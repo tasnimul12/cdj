@@ -2,7 +2,7 @@
   footer {
     margin-top: 5rem;
     height: 7rem;
-    background-color: $yellow;
+    background-color: yellow;
   }
 
   #socials {
@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     height: 100%;
     a {
-      width: 3rem;
+      width: 1cm;
       padding: 1.5rem;
       transition: filter 100ms;
       &:hover {
@@ -54,4 +54,3 @@
     </a>
   </div>
 </footer>
-

@@ -9,13 +9,11 @@
     metatags.description = blurb;
 
     const team = [
-      { name: 'Ahmed Sultan', year: 24, role: 'President', desc: 'Fill b tag emphasizes i tag major.' },
-      { name: 'Carly Hu', year: 24, role: 'Co-Editor in Chief', desc: 'Dana is an <i>Information Science</i> major and <i>PAM</i> minor. She eats oatmeal <b>364/365</b> days of the year.' },
-      { name: 'Melanie Walsh', role: 'Faculty Mentor', desc: 'Melanie is a <i>Postdoctoral Associate in Information Science</i>. She has visited <b>9 National Parks</b> and encountered a running total of <b>0 grizzly bears</b>.' },
-      { name: 'Megan Rochlin', year: 21, role: 'Deputy Editor', desc: 'Megan is majoring in <i>English</i> and <i>Computer Science</i> and minoring in <i>Creative Writing</i>. Since 2012, she has written <b>8 (bad) novels</b> with a total of <b>377,097 words</b>.' },
-      { name: 'Liying Wang', year: 22, role: 'Marketing/Graphics Editor', desc: 'Liying is an <i>Information Science</i> major, minoring in <i>Visual Studies</i> and <i>Business</i>. She has lived in <b>Japan for 14%</b> of her life, <b>Canada for 10%</b>, and the <b>US for 76%</b>.' },
-      { name: 'Andrei Shpilenok', year: 23, role: 'Web Developer', desc: 'Andrei is a <i>Computer Science</i> major. He owns <b>3 mechanical keyboards</b>.' },
-      { name: 'Yun Mi Koh', year: 21, role: 'Marketing Lead', desc: 'Yun Mi is a <i>DEA</i> major with a minor in <i>UX</i>.' },
+      { name: 'Ahmed Sultan', year: 24, role: 'President', desc: 'Ahmed is an <i>Information Science</i> major, minoring in <i>Business</i>.' },
+      { name: 'Elena Joseph', year: 24, role: 'Executive Vice President', desc: 'Elena is an <i>Information Science</i> major, minoring in <i>Law & Society</i>. Since 2002, she has ate <b>shellfish twice</b> and went to the hospital <b>100%</b> of these times.' },
+      { name: 'Tasnimul Taher', year: 24, role: 'Vice President of Internal Affairs', desc: 'Tas is an <i>Information Science</i> major, minoring in <i>Business</i>. He has consumed <b>0</b> sandwiches in his life.' },
+      { name: 'Carly Hu', year: 24, role: 'Vice President of External Affairs', desc: 'Carly is an <i>Information Science</i> and <i>Sociology</i> double major. She has a baking Instagram account and <b>39%</b> of the posts are cookies or cupcakes.' },
+      { name: 'Neema Kudva', role: 'Faculty Mentor', desc: 'Professor Kudva is a <i>senior associate dean for academic affairs</i> and the <i>house professor and dean at Becker house</i>.' },
     ];
 
     const colors = ['#A4BCD5', '#2C358B', '#F8C82D', '#642D89'];
@@ -55,7 +53,7 @@
 
 <div id="main">
   <h2>What is Cornell Data Journal?</h2>
-  <p>Founded in Fall 2020, <b>Cornell Data Journal</b> is an online investigative journalism publication featuring data visualization, data communication, and interdisciplinary research pieces.</p>
+  <p>Founded in Fall 2020, and revived in Spring 2023, <b>Cornell Data Journal</b> is an online investigative journalism publication featuring data visualization, data communication, and interdisciplinary research pieces.</p>
   <ul>
     <li> Individuals or teams collaborating on articles</li>
      <li>Published on a rolling basis</li>

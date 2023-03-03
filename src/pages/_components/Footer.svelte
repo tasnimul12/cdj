@@ -2,7 +2,7 @@
   footer {
     margin-top: 5rem;
     height: 7rem;
-    background-color: yellow;
+    background-color:#ffce00;
   }
 
   #socials {

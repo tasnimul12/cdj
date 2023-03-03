@@ -25,7 +25,8 @@
 <div>
   <h2> Join Cornell Data Journal!</h2>
   <p>We welcome students of all backgrounds and disciplines to come create with us. Whether you've worked with data before or not, anyone is welcome to contribute and publish with us.</p>
-  <p>To get started, join us on Slack and fill out our <a href="https://forms.gle/CoddNychjDzz2x1v7" target="_blank">spring interest form</a> and we'll be in touch shortly. If you have any questions, feel free to shoot us an <a href="mailto:cornelldatajournal@gmail.com">email</a>.</p>
+  <p><b> Our recruitment period for Spring 2023 has closed.</b> If you are interested in joining Cornell Data Journal, please apply next semester! <p>
+  <p>If you have any questions, feel free to shoot us an <a href="mailto:cornelldatajournal@gmail.com">email</a>.</p>
   <h2>Events</h2>
   <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=Y29ybmVsbGRhdGFqb3VybmFsQGdtYWlsLmNvbQ&amp;color=%237CB342&amp;showTz=0&amp;showCalendars=0&amp;showTabs=0&amp;showPrint=0&amp;showDate=1&amp;showNav=1&amp;showTitle=0" height="600" scrolling="no" title="CDJ Event Calendar"></iframe>
 </div>

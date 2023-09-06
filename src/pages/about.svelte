@@ -68,7 +68,7 @@
 
 <div id="main">
   <h2>What is Cornell Data Journal?</h2>
-  <p>Founded in Fall 2020, and revived in Spring 2023, <b>Cornell Data Journal</b> is an online investigative journalism publication featuring data visualization, data communication, and interdisciplinary research pieces.</p>
+  <p>Founded in Fall 2020, <b>Cornell Data Journal</b> is an online investigative journalism publication featuring data visualization, data communication, and interdisciplinary research pieces.</p>
   <ul>
     <li> Individuals or teams collaborating on articles</li>
      <li>Published on a rolling basis</li>

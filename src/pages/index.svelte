@@ -35,6 +35,10 @@
     margin: 0 auto;
     padding: 0 1rem;
   }
+  #org {
+    color: grey;
+    text-align: center;
+  }
   @media only screen and (max-width: $mobile-cutoff-xs) {
     #articles {
       padding: 0 0.5rem;
@@ -53,4 +57,8 @@
   {#each articles.filter(article => !article.featured) as article}
     <ArticleSmall {article} />
   {/each}
+</div>
+
+<div id="org">
+  <h3>This organization is a registered student organization of Cornell University.</h3>
 </div>

@@ -25,7 +25,7 @@
     }
   }
 
-  @media only screen and (max-width: $mobile-cutoff) {
+  @media only screen and (max-width: mobile-cutoff) {
     #socials {
       a {
         width: 2.5rem;
@@ -36,7 +36,6 @@
 </style>
 
 <footer>
-  <div><h1>This organization is a registered student organization of Cornell University.</h1></div>
   <div id="socials">
     <a href="https://www.instagram.com/cornelldatajournal/" target="_blank">
       <img src="/socials/instagram.svg" alt="Instagram">

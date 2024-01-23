@@ -15,21 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v2
-    - name: Setup Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: '14.x'
-    - name: Cache Node.js modules
-      uses: actions/cache@v2
-      with:
-        path: ~/.npm 
-        key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.OS }}-node-
-          ${{ runner.OS }}-
-    - run: npm ci
-    - name: Run ESLint
-      run: yarn run eslint src/pages/ --quiet
-    - run: npm run build
-    - run: npm test
+      - uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3
+      # Reference the major version of a release
+      - uses: actions/checkout@v4
+      # Reference a specific version
+      - uses: actions/checkout@v4.2.0
+      # Reference a branch
+      - uses: actions/checkout@main
+

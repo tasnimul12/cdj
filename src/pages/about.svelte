@@ -47,10 +47,13 @@
     color: $blue;
     margin: 1em 0;
   }
+  
   #org {
     color: grey;
     text-align: center;
     padding: 0 1rem;
+    margin-bottom: 0em;
+    padding-bottom: 0em;
   }
 </style>
 

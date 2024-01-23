@@ -38,6 +38,7 @@
   #org {
     color: grey;
     text-align: center;
+    padding: 0 1rem;
   }
   @media only screen and (max-width: $mobile-cutoff-xs) {
     #articles {

@@ -47,6 +47,11 @@
     color: $blue;
     margin: 1em 0;
   }
+  #org {
+    color: grey;
+    text-align: center;
+    padding: 0 1rem;
+  }
 </style>
 
 <Intro {blurb} />
@@ -70,4 +75,8 @@
       <Person {name} {year} {role} {minor} {major} {desc} color={colors[i % colors.length]}/>
     {/each}
   </div>
+</div>
+
+<div id="org">
+  <h3>This organization is a registered student organization of Cornell University.</h3>
 </div>

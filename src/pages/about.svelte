@@ -36,16 +36,16 @@
 
 <style>
   #main {
-    max-width: $max-width;
+    max-width: max-width;
     margin: 0 auto;
     padding: 0 1rem;
   }
   b {
-    font-family: $font-secondary;
+    font-family: font-secondary;
     font-weight: 100;
   }
   h2 {
-    color: $blue;
+    color: blue;
   }
   #team {
     display: grid;
@@ -59,7 +59,7 @@
     font-size: 20px;
   }
   h2 {
-    color: $blue;
+    color: blue;
     margin: 1em 0;
   }
 </style>

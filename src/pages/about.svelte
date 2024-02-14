@@ -9,7 +9,7 @@
     metatags.description = blurb;
 
     const team = [
-      { name: 'Ahmed Sultan', year: 24, role: 'President', desc: 'Ahmed is an <i>Information Science</i> major, minoring in <i>Business</i>.' },
+      { name: 'Catherine Zhang', year: 24, role: 'President', desc: 'Ahmed is an <i>Information Science</i> major, minoring in <i>Business</i>.' },
       { name: 'Elena Joseph', year: 24, role: 'Executive Vice President', desc: 'Elena is an <i>Information Science</i> major, minoring in <i>Law & Society</i>. Since 2002, she has ate <b>shellfish twice</b> and went to the hospital <b>100%</b> of these times.' },
       { name: 'Tasnimul Taher', year: 24, role: 'Vice President of Internal Affairs', desc: 'Tas is an <i>Information Science</i> major, minoring in <i>Business</i>. He has consumed <b>0</b> sandwiches in his life.' },
       { name: 'Carly Hu', year: 24, role: 'Vice President of External Affairs', desc: 'Carly is an <i>Information Science</i> and <i>Sociology</i> double major. She has a baking Instagram account and <b>39%</b> of the posts are cookies or cupcakes.' },

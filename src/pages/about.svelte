@@ -9,13 +9,12 @@
     metatags.description = blurb;
 
     const team = [
-      { name: 'Ahmed Sultan', year: 24, role: 'President', desc: 'Ahmed is an <i>Information Science</i> major, minoring in <i>Business</i>.' },
-      { name: 'Elena Joseph', year: 24, role: 'Executive Vice President', desc: 'Elena is an <i>Information Science</i> major, minoring in <i>Law & Society</i>. Since 2002, she has ate <b>shellfish twice</b> and went to the hospital <b>100%</b> of these times.' },
-      { name: 'Tasnimul Taher', year: 24, role: 'Vice President of Internal Affairs', desc: 'Tas is an <i>Information Science</i> major, minoring in <i>Business</i>. He has consumed <b>0</b> sandwiches in his life.' },
-      { name: 'Carly Hu', year: 24, role: 'Vice President of External Affairs', desc: 'Carly is an <i>Information Science</i> and <i>Sociology</i> double major. She has a baking Instagram account and <b>39%</b> of the posts are cookies or cupcakes.' },
+      { name: 'Catherine Zhang', year: 25, role: 'President', desc: 'Catherine is a <i>Biometry and Statistics</i> major.' },
+      { name: 'Steven Zhou', year: 26, role: 'Executive Vice President', desc: 'Steven is an <i>Environment & Sustainability</i> and <i>Information Science</i> double major. In 2023, he visited <b>15</b> different countries and spent <b>130</b> hours in the air.' },
+      { name: 'William Rosenthal', year: 27, role: 'Vice President of Internal Affairs', desc: 'Will is a <i>Computer Science</i> major interested in cybersecurity and policy. At Panera Bread, he orders Mac & Cheese <b>100%</b> of the time.' },
+      { name: 'Rishi Gurjar', year: 27, role: 'Vice President of External Affairs', desc: 'Rishi is an <i>Environment & Sustainability</i> and <i>Computer Science</i> double major. When he is home, he spends around <b>41%</b> of his waking hours gardening.' },
       { name: 'Neema Kudva', role: 'Faculty Mentor', desc: 'Professor Kudva is a <i>senior associate dean for academic affairs</i> and the <i>house professor and dean at Becker house</i>.' },
     ];
-
     const colors = ['#A4BCD5', '#2C358B', '#F8C82D', '#642D89'];
 </script>
 

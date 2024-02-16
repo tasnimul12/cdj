@@ -51,7 +51,7 @@
       }
       h1 {
         margin: 0;
-        font-size: 55px;
+        font-size: 45px;
         line-height: 0.8;
       }
     }
@@ -225,7 +225,7 @@
   {#if windowWidth > 950}
     <a id="logo" href="/"><img src="/favicon.svg" alt="CDJ Logo" /></a>
   {/if}
-  <a id="title" href="/"><h1>cornell data journal</h1></a>
+  <a id="title" href="/"><h1>data journal at cornell</h1></a>
   <h2 id="blurb">{blurb}</h2>
   <nav>
     {#if windowWidth <= 950}
@@ -259,10 +259,6 @@
             <a href="https://www.facebook.com/cornelldatajournal/" target="_blank">
               <img src="/socials/facebook.svg" alt="Facebook" />
             </a>
-            <a
-              href="https://join.slack.com/t/cornell-data-journal/shared_invite/zt-mb391cgl-yqsPnKf6IptzobNInf~y0Q" target="_blank">
-              <img src="/socials/slack.svg" alt="Slack" />
-            </a>
             <a href="https://www.linkedin.com/company/cornell-data-journal/" target="_blank">
               <img src="/socials/linkedin.svg" alt="LinkedIn" />
             </a>
@@ -281,9 +277,6 @@
       </a>
       <a href="https://www.facebook.com/cornelldatajournal/" target="_blank">
         <img src="/socials/facebook.svg" alt="Facebook" />
-      </a>
-      <a href="https://join.slack.com/t/cornell-data-journal/shared_invite/zt-p9ehqeea-AmiyvTmpXq~oxXYughkm1A" target="_blank">
-        <img src="/socials/slack.svg" alt="Slack" />
       </a>
       <a href="https://www.linkedin.com/company/cornell-data-journal/" target="_blank">
         <img src="/socials/linkedin.svg" alt="LinkedIn" />

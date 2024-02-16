@@ -29,10 +29,9 @@
 <Intro {blurb} />
 
 <div>
-  <h2> Join Cornell Data Journal!</h2>
+  <h2>Join CDJ!</h2>
   <p>We welcome students of all backgrounds and disciplines to come create with us. Whether you've worked with data before or not, anyone is welcome to contribute and publish with us.</p>
-  <p><b> Recruitment for Spring 2024 will open in the next few weeks!</b></p>
-  <p>Check out our event schedule below for upcoming information session dates and locations. If you have any questions, feel free to shoot us an <a href="mailto:cornelldatajournal@gmail.com">email</a>.</p>
+  <p><b>Recruitment will open in Fall 2024.</b></p>
   <h2>Events</h2>
   <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=Y29ybmVsbGRhdGFqb3VybmFsQGdtYWlsLmNvbQ&amp;color=%237CB342&amp;showTz=0&amp;showCalendars=0&amp;showTabs=0&amp;showPrint=0&amp;showDate=1&amp;showNav=1&amp;showTitle=0" height="600" scrolling="no" title="CDJ Event Calendar"></iframe>
 </div>

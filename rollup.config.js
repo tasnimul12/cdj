@@ -13,7 +13,7 @@ import { injectManifest } from 'rollup-plugin-workbox'
 import { mdsvex } from "mdsvex";
 import smartAsset from "rollup-plugin-smart-asset";
 import json from '@rollup/plugin-json';
-import replace from 'rollup-plugin-replace';
+import replace from '@rollup/plugin-replace';
 
 const { distDir } = getConfig() // use Routify's distDir for SSOT
 const assetsDir = 'assets'

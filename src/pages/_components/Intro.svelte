@@ -256,6 +256,7 @@
             <a href="https://www.instagram.com/cornelldatajournal/" target="_blank">
               <img src="/socials/instagram.svg" alt="Instagram" />
             </a>
+            <!-- 
             <a href="https://www.facebook.com/cornelldatajournal/" target="_blank">
               <img src="/socials/facebook.svg" alt="Facebook" />
             </a>
@@ -264,7 +265,7 @@
             </a>
             <a href="https://twitter.com/cu_datajournal" target="_blank">
               <img src="/socials/twitter.svg" alt="Twitter" />
-            </a>
+            </a> -->
           </div>
         {/if}
       </div>
@@ -275,15 +276,18 @@
       <a href="https://www.instagram.com/cornelldatajournal/" target="_blank">
         <img src="/socials/instagram.svg" alt="Instagram" />
       </a>
+
+      <!-- 
       <a href="https://www.facebook.com/cornelldatajournal/" target="_blank">
         <img src="/socials/facebook.svg" alt="Facebook" />
       </a>
+      
       <a href="https://www.linkedin.com/company/cornell-data-journal/" target="_blank">
         <img src="/socials/linkedin.svg" alt="LinkedIn" />
       </a>
       <a href="https://twitter.com/cu_datajournal" target="_blank">
         <img src="/socials/twitter.svg" alt="Twitter" />
-      </a>
+      </a>-->
     </div>
   {/if}
 </div>

@@ -40,6 +40,8 @@
     <a href="https://www.instagram.com/cornelldatajournal/" target="_blank">
       <img src="/socials/instagram.svg" alt="Instagram">
     </a>
+
+    <!--
     <a href="https://www.facebook.com/cornelldatajournal/" target="_blank">
       <img src="/socials/facebook.svg" alt="Facebook">
     </a>
@@ -48,6 +50,6 @@
     </a>
     <a href="https://twitter.com/cu_datajournal" target="_blank">
       <img src="/socials/twitter.svg" alt="Twitter">
-    </a>
+    </a> -->
   </div>
 </footer>

@@ -7,3 +7,5 @@ src/tmp/
 .netlify
 assets/build
 .vercel
+
+package-lock.json

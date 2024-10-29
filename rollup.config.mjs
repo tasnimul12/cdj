@@ -4,7 +4,6 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
-import { copySync, removeSync } from 'fs-extra'
 import { spassr } from 'spassr'
 import getConfig from '@roxi/routify/lib/utils/config'
 import autoPreprocess from 'svelte-preprocess'
@@ -14,6 +13,8 @@ import { mdsvex } from "mdsvex";
 import smartAsset from "rollup-plugin-smart-asset";
 import json from '@rollup/plugin-json';
 import replace from '@rollup/plugin-replace';
+import pkg from 'fs-extra';
+const { copySync, removeSync } = pkg;
 
 const { distDir } = getConfig() // use Routify's distDir for SSOT
 const assetsDir = 'assets'
@@ -32,14 +33,13 @@ const serve = () => ({
             entrypoint: `${assetsDir}/__app.html`,
             script: `${buildDir}/main.js`
         }
-        spassr({ ...options, port: 5000 })
+        spassr({ ...options, port: 3000 })
         spassr({ ...options, ssr: true, port: 5005, ssrOptions: { inlineDynamicImports: true, dev: true } })
     }
 })
 const copyToDist = () => ({ writeBundle() { copySync(assetsDir, distDir) } })
 
-
-export default {
+const config = {
     preserveEntrySignatures: false,
     input: [`src/main.js`],
     output: {
@@ -59,7 +59,6 @@ export default {
     plugins: [
         svelte({
             dev: !production, // run-time checks      
-            // Extract component CSS — better performance
             css: css => css.write(`bundle.css`),
             hot: isNollup,
             extensions: [".svelte", ".svx", ".html"],
@@ -90,20 +89,16 @@ export default {
           useHash: true,
           extensions: [".svg", ".gif", ".png", ".jpg", ".mp3", ".csv"], 
         }),
-
-        // resolve matching modules from current working directory
         resolve({
             browser: true,
             dedupe: importee => !!importee.match(/svelte(\/|$)/)
         }),
         commonjs(),
-
         production && terser(),
         !production && !isNollup && serve(),
-        !production && !isNollup && livereload(distDir), // refresh entire window when code is updated
-        !production && isNollup && Hmr({ inMemory: true, public: assetsDir, }), // refresh only updated code
+        !production && !isNollup && livereload(distDir),
+        !production && isNollup && Hmr({ inMemory: true, public: assetsDir, }),
         {
-            // provide node environment on the client
             transform: code => ({
                 code: code.replace('process.env.NODE_ENV', `"${process.env.NODE_ENV}"`),
                 map: { mappings: '' }
@@ -111,6 +106,7 @@ export default {
         },
         replace({
           'process.env.NODE_ENV': `"${production ? 'production' : 'development'}"`,
+          preventAssignment: true
         }),
         injectManifest({
             globDirectory: assetsDir,
@@ -121,9 +117,11 @@ export default {
             mode: 'production'
         }),
         production && copyToDist(),
-    ],
+    ].filter(Boolean),
     watch: {
         clearScreen: false,
         buildDelay: 100,
     }
 }
+
+export default config; 

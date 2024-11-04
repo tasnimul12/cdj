@@ -11,12 +11,28 @@
     metatags.description = `A semesterly magazine ${blurb}`;
 
     const articles = $layout.children
-      .find(entry => entry.path === '/articles').children
-      .map(post => ({
-        slug: post.path,
-        component: post.children.find(child => child.title === 'Preview_').component,
-        ...post.__file.children.find(child => child.isIndex).meta.frontmatter,
-      }));
+      .find(entry => entry.path === '/articles')?.children
+      ?.map(post => {
+        try {
+          const previewComponent = post.children?.find(child => child.title === 'Preview_')?.component;
+          const frontmatter = post.__file?.children?.find(child => child.isIndex)?.meta?.frontmatter;
+          
+          if (!previewComponent || !frontmatter) {
+            console.warn(`Missing preview or frontmatter for article: ${post.path}`);
+            return null;
+          }
+
+          return {
+            slug: post.path,
+            component: previewComponent,
+            ...frontmatter,
+          };
+        } catch (err) {
+          console.warn(`Error processing article ${post.path}:`, err);
+          return null;
+        }
+      })
+      .filter(article => article !== null) || [];
 
     let componentsReady = 0;
     setContext('ready', () => {
@@ -50,15 +66,21 @@
 
 <Intro {blurb}/>
 
-{#each articles.filter(article => article.featured) as article}
-  <ArticleBig {article} />
-{/each}
-
-<div id="articles">
-  {#each articles.filter(article => !article.featured) as article}
-    <ArticleSmall {article} />
+{#if articles.length > 0}
+  {#each articles.filter(article => article.featured) as article}
+    <ArticleBig {article} />
   {/each}
-</div>
+
+  <div id="articles">
+    {#each articles.filter(article => !article.featured) as article}
+      <ArticleSmall {article} />
+    {/each}
+  </div>
+{:else}
+  <div style="text-align: center; padding: 2rem;">
+    <p>No articles available at the moment.</p>
+  </div>
+{/if}
 
 <div id="org">
   <h3>This organization is a registered student organization of Cornell University.</h3>

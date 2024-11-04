@@ -13,9 +13,9 @@
     "routify": "run routify"
   },
   "scripts": {
-    "dev": "rollup -c rollup.config.mjs -w",
+    "dev": "run-p routify nollup",
     "dev:ssr": "run-p routify rollup",
-    "build": "rollup -c rollup.config.mjs",
+    "build": "run-s build:*",
     "build:app": "routify -b && rollup -c",
     "build:static": "spank",
     "build:rss": "node -r esm rss.js",

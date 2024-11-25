@@ -284,10 +284,11 @@
       <a href="https://www.facebook.com/cornelldatajournal/" target="_blank">
         <img src="/socials/facebook.svg" alt="Facebook" />
       </a>
-      
-      <a href="https://www.linkedin.com/company/cornell-data-journal/" target="_blank">
-        <img src="/socials/linkedin.svg" alt="LinkedIn" />
+
+      <a href="mailto:cornelldatajournal@gmail.com" target="_blank">
+        <img src="/socials/email-icon.svg" alt="Email">
       </a>
+      
       <a href="https://twitter.com/cu_datajournal" target="_blank">
         <img src="/socials/twitter.svg" alt="Twitter" />
       </a>-->

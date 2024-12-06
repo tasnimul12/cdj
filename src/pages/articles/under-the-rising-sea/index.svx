@@ -44,7 +44,7 @@ date: December 6, 2024
 
 <Wrapper>
 
-> “The ocean is a desert with its life underground, and a perfect disguise above” ([America](https://en.wikipedia.org/wiki/America_(band)))
+> “The ocean is a desert with its life underground, and a perfect disguise above” — ["A Horse With No Name", America](https://www.google.com/search?client=safari&rls=en&q=The+ocean+is+a+desert+with+its+life+underground%2C+and+a+perfect+disguise+above&ie=UTF-8&oe=UTF-8)
 
 Colorful fish, forests of seaweed, crustaceans, glowing plants, large mammals built to withstand tons of water pressure, whale songs, and underwater trenches and gorges all make up what the rock band America refers to as a “desert with its life underground”. However, historically and presently, the world’s oceans have not been treated as a sacred, disguised world but as a platform for trade, economic development, global domination, migration, and global sustenance. The ever-growing impact of human negligence and climate change are rising sea temperatures which have begun to unravel this balance, posing significant threats to the survival of underwater life.
 
@@ -60,13 +60,15 @@ To further understand the intricate network between climate change effects and t
 
 <img class="alone big" src={fisher} alt="better_fisherman">
 
+([Source](https://unsplash.com/photos/man-wearing-green-safety-vest-riding-yellow-inflatable-boat-tgO-E1m9vPw))
+
 Lea provided context to the current state of the North Atlantic Right whale population; Since the early 2000s, there have been consistent efforts to track Right Whales including construction done in the Harbor of Massachusetts that employs acoustics to monitor North Atlantic Right whale signals. This monitoring intends to prevent anthropogenic deaths among the whale population, including ship strikes and ship gear entanglements.
 
 Anthropogenic deaths pose the greatest threat to the North Atlantic Right Whale population. These deaths primarily result from historical overhunting and contemporary ship strikes and entanglement with fishing gear, particularly in the area between Florida and Cape Cod Bay. As apex predators, North Atlantic Right Whales play a vital role in the ecosystem by consuming smaller organisms and fertilizing the ocean with their feces. Despite being granted protected status in 1935, their population saw improvements until 2010, after which calving rates declined and mortality rates increased. Between 2017 and 2020, an Unusual Mortality Event was declared as at least 32 dead and 13 seriously injured whales were documented, constituting more than 10% of the remaining population. Climate change exacerbates the situation through earlier mentioned AMOC shifts which alter the whales’ foraging grounds. As the whales experience this shift in migration and foraging grounds it is harder for the buoys to track and record whale sounds and therefore for ships to predict the movement or area the whales inhabit. Anthropogenic threats contributed to an overall population loss of 17% between the years of 2017-2020. 
 
 <img class="alone big" src={geo_plot} alt="Map of Vessels">
 
-([image source](https://www.birds.cornell.edu/ccb/field-notes-brp-auto-buoy-turnaround/))
+([Source](https://www.birds.cornell.edu/ccb/field-notes-brp-auto-buoy-turnaround/))
 
 The U.S. East Coast, particularly areas like the Boston Harbor, serves as a critical habitat for the North Atlantic right whale. However, the presence of large vessels, including cargo ships, cruise liners, and fishing boats, poses a significant risk to these whales. Collisions with ships can cause serious injuries or fatalities to the whales, further endangering an already vulnerable population. 
 

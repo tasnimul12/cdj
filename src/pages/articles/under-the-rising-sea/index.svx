@@ -3,8 +3,8 @@ featured: true
 title: Under The Rising Sea
 description: Rising sea temperatures and climate change are disrupting marine ecosystems, threatening species like the North Atlantic Right Whale and coral reefs. Urgent conservation efforts, such as reducing ship speeds and supporting coral adaptation, are crucial, but long-term success depends on global action to mitigate climate change.
 
-authors: [Neha Arora, Keya Gillenwater, Jenny Williams, Winston Ni, Shashank Kalyanaraman, Emily Vo, Stella Zhang, Kai Wang]
-date: November 24, 2024
+authors: [Neha Arora, Keya Gillenwater, Shashank Kalyanaraman, Emily Vo, Stella Zhang, Kai Wang, Jenny Williams, Winston Ni]
+date: December 6, 2024
 ---
 
 <script>

@@ -1,5 +1,4 @@
 ---
-featured: true
 title: Campaign Trails
 description: Each election cycle, candidates campaign in various states to appeal to voters from all over the country. Does that actually matter?
 

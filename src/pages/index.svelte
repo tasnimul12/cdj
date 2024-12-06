@@ -81,7 +81,3 @@
     <p>No articles available at the moment.</p>
   </div>
 {/if}
-
-<div id="org">
-  <h3>This organization is a registered student organization of Cornell University.</h3>
-</div>

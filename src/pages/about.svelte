@@ -13,6 +13,8 @@
       { name: 'Steven Zhou', year: 26, role: 'Executive Vice President', desc: 'Steven is an <i>Environment & Sustainability</i> and <i>Information Science</i> double major. In 2023, he visited <b>15</b> different countries and spent <b>130</b> hours in the air.' },
       { name: 'William Rosenthal', year: 27, role: 'Vice President of Internal Affairs', desc: 'Will is a <i>Computer Science</i> major interested in cybersecurity and policy. At Panera Bread, he orders Mac & Cheese <b>100%</b> of the time.' },
       { name: 'Rishi Gurjar', year: 27, role: 'Vice President of External Affairs', desc: 'Rishi is an <i>Environment & Sustainability</i> and <i>Computer Science</i> double major. When he is home, he spends around <b>25%</b> of his waking hours gardening.' },
+      { name: 'Bradley Lasker', year: 26, role: 'Social Coordinator', desc: 'Bradley is a <i>Biometry & Statistics</i> major.' },
+      { name: 'Amy Chitnumsab', year: 26, role: 'Project Lead Coordinator', desc: 'Amy is a <i>Statistics</i> major.' },
       { name: 'Neema Kudva', role: 'Faculty Mentor', desc: 'Professor Kudva is a <i>senior associate dean for academic affairs</i> and the <i>house professor and dean at Becker house</i>.' },
     ];
     const colors = ['#A4BCD5', '#2C358B', '#F8C82D', '#642D89'];
@@ -77,8 +79,4 @@
       <Person {name} {year} {role} {minor} {major} {desc} color={colors[i % colors.length]}/>
     {/each}
   </div>
-</div>
-
-<div id="org">
-  <h3>This organization is a registered student organization of Cornell University.</h3>
 </div>

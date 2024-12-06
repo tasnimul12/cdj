@@ -2,15 +2,23 @@
   footer {
     margin-top: 5rem;
     height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color:#ffce00;
+  }
+
+  #org {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   #socials {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
-    height: 100%;
     a {
       width: 1cm;
       padding: 1.5rem;
@@ -36,9 +44,19 @@
 </style>
 
 <footer>
+  <div id="org">
+    <h3>This organization is a registered student organization of Cornell University.</h3>
+  </div>
+
   <div id="socials">
     <a href="https://www.instagram.com/cornelldatajournal/" target="_blank">
       <img src="/socials/instagram.svg" alt="Instagram">
+    </a>
+    <a href="https://www.linkedin.com/company/cornell-data-journal/" target="_blank">
+      <img src="/socials/linkedin.svg" alt="LinkedIn">
+    </a>
+    <a href="mailto:cornelldatajournal@gmail.com" target="_blank">
+      <img src="/socials/email-icon.svg" alt="Email">
     </a>
 
     <!--

@@ -15,7 +15,7 @@
   ];
 
   const seriesNames = Object.keys(data[0]).filter(d => d !== yKey);
-  const seriesColors = ['#00bbff', '#8bcef6'];
+  const seriesColors = ['#00bbff', '#800080'];
 
   // Improved label formatting function
   const formatLabel = (label) => {

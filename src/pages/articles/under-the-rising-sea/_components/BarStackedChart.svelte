@@ -7,20 +7,31 @@
   const yKey = 'year';
 
   const data = [
-    { year: "2018", unique: 1.877256317689529, count: 21.35379061371841 },
-    { year: "2019", unique: 1.9945848375451263, count: 1.2906137184115494 },
-    { year: "2020", unique: 1.877256317689529, count: 61.94945848375451 },
-    { year: "2021", unique: 1.1732851985559591, count: 16.54332129963899 },
-    { year: "2022", unique: 2.8158844765342934, count: 31.91335740072202 }
+    { year: "2018", unique_vessels: 1.877256317689529, number_of_detections: 21.35379061371841 },
+    { year: "2019", unique_vessels: 1.9945848375451263, number_of_detections: 1.2906137184115494 },
+    { year: "2020", unique_vessels: 1.877256317689529, number_of_detections: 61.94945848375451 },
+    { year: "2021", unique_vessels: 1.1732851985559591, number_of_detections: 16.54332129963899 },
+    { year: "2022", unique_vessels: 2.8158844765342934, number_of_detections: 31.91335740072202 }
   ];
 
   const seriesNames = Object.keys(data[0]).filter(d => d !== yKey);
   const seriesColors = ['#00bbff', '#8bcef6'];
 
+  // Improved label formatting function
+  const formatLabel = (label) => {
+    return label
+      .split('_')
+      .map((word, index) => index === 0 ? 
+        word.charAt(0).toUpperCase() + word.slice(1) : 
+        word
+      )
+      .join(' ');
+  };
+
   const chartData = {
     labels: data.map(d => d.year),
     datasets: seriesNames.map((name, index) => ({
-      label: name,
+      label: formatLabel(name),
       data: data.map(d => d[name]),
       backgroundColor: seriesColors[index],
       borderColor: seriesColors[index],
@@ -39,11 +50,18 @@
         responsive: true,
         maintainAspectRatio: false,
         interaction: {
-          mode: 'index', // Improved interaction mode
-          intersect: false // Allow hovering between bars
+          mode: 'index',
+          intersect: false
         },
         scales: {
           x: {
+            title: {
+              display: true,
+              text: 'Year',
+              font: {
+                weight: 'bold'
+              }
+            },
             ticks: {
               callback: function (value) {
                 return chartData.labels[value];
@@ -52,8 +70,14 @@
           },
           y: {
             beginAtZero: true,
+            title: {
+              display: true,
+              text: 'Count',
+              font: {
+                weight: 'bold'
+              }
+            },
             ticks: {
-              // Format y-axis ticks to two decimal places
               callback: function(value) {
                 return value.toFixed(2);
               }
@@ -63,7 +87,6 @@
         plugins: {
           tooltip: {
             callbacks: {
-              // Customize tooltip to show more detailed information
               title: function(context) {
                 return `Year: ${context[0].label}`;
               },

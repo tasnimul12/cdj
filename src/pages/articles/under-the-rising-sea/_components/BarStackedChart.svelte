@@ -2,7 +2,6 @@
   import { onMount, onDestroy } from 'svelte';
   import { Chart, registerables } from 'chart.js';
 
-  // Register Chart.js components
   Chart.register(...registerables);
 
   const yKey = 'year';

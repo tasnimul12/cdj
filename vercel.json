@@ -13,12 +13,5 @@
       "src": "/.*",
       "dest": "/api/vercel-ssr/index.js"
     }
-  ],
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "dist" }
-    }
   ]
 }

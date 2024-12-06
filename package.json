@@ -16,6 +16,7 @@
     "dev": "run-p routify nollup",
     "dev:ssr": "run-p routify rollup",
     "build": "run-s build:*",
+    "vercel-build": "npm run build:app && npm run build:static && npm run build:rss",
     "build:app": "routify -b && rollup -c",
     "build:static": "spank",
     "build:rss": "node -r esm rss.js",

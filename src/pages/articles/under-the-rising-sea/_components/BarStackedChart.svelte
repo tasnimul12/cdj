@@ -1,72 +1,111 @@
 <script>
-    import { LayerCake, Svg, flatten, stack } from 'layercake';
-  
-    import { scaleBand, scaleOrdinal } from 'd3-scale';
-    import { format } from 'd3-format';
-  
-    import BarStacked from './BarStacked.svelte';
-    import AxisX from './AxisX.svelte';
-    import AxisY from './AxisY.svelte';
-  
-    const xKey = [0, 1];
-    const yKey = 'year';
-    const zKey = 'key';
+  import { onMount, onDestroy } from 'svelte';
+  import { Chart, registerables } from 'chart.js';
 
-    const data = [
+  // Register Chart.js components
+  Chart.register(...registerables);
+
+  const yKey = 'year';
+
+  const data = [
     { year: "2018", unique: 1.877256317689529, count: 21.35379061371841 },
     { year: "2019", unique: 1.9945848375451263, count: 1.2906137184115494 },
     { year: "2020", unique: 1.877256317689529, count: 61.94945848375451 },
     { year: "2021", unique: 1.1732851985559591, count: 16.54332129963899 },
     { year: "2022", unique: 2.8158844765342934, count: 31.91335740072202 }
-    ];
-  
-    const seriesNames = Object.keys(data[0]).filter(d => d !== yKey);
-    const seriesColors = ['#00bbff', '#8bcef6'];
-  
-    /* --------------------------------------------
-     * Cast data
-     */
-    data.forEach(d => {
-      seriesNames.forEach(name => {
-        d[name] = +d[name];
-      });
+  ];
+
+  const seriesNames = Object.keys(data[0]).filter(d => d !== yKey);
+  const seriesColors = ['#00bbff', '#8bcef6'];
+
+  const chartData = {
+    labels: data.map(d => d.year),
+    datasets: seriesNames.map((name, index) => ({
+      label: name,
+      data: data.map(d => d[name]),
+      backgroundColor: seriesColors[index],
+      borderColor: seriesColors[index],
+      borderWidth: 1
+    }))
+  };
+
+  let chart;
+  let chartCanvas;
+
+  onMount(() => {
+    chart = new Chart(chartCanvas, {
+      type: 'bar',
+      data: chartData,
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: {
+          mode: 'index', // Improved interaction mode
+          intersect: false // Allow hovering between bars
+        },
+        scales: {
+          x: {
+            ticks: {
+              callback: function (value) {
+                return chartData.labels[value];
+              }
+            }
+          },
+          y: {
+            beginAtZero: true,
+            ticks: {
+              // Format y-axis ticks to two decimal places
+              callback: function(value) {
+                return value.toFixed(2);
+              }
+            }
+          }
+        },
+        plugins: {
+          tooltip: {
+            callbacks: {
+              // Customize tooltip to show more detailed information
+              title: function(context) {
+                return `Year: ${context[0].label}`;
+              },
+              label: function(context) {
+                let label = context.dataset.label || '';
+                if (label) {
+                  label += ': ';
+                }
+                if (context.parsed.y !== null) {
+                  label += context.parsed.y.toFixed(2);
+                }
+                return label;
+              }
+            }
+          },
+          legend: {
+            position: 'top'
+          }
+        }
+      }
     });
-  
-    const formatLabelX = d => format(`~s`)(d);
-  
-    const stackedData = stack(data, seriesNames);
-  </script>
-  
-  <div class="chart-container">
-    <LayerCake
-      padding={{ top: 0, bottom: 20, left: 35 }}
-      x={xKey}
-      y={d => d.data[yKey]}
-      z={zKey}
-      yScale={scaleBand().paddingInner(0.05)}
-      zScale={scaleOrdinal()}
-      zDomain={seriesNames}
-      zRange={seriesColors}
-      flatData={flatten(stackedData)}
-      data={stackedData}
-    >
-      <Svg>
-        <AxisX baseline snapLabels format={formatLabelX} />
-        <AxisY gridlines={false} />
-        <BarStacked />
-      </Svg>
-    </LayerCake>
-  </div>
-  
-  <style>
-    /*
-      The wrapper div needs to have an explicit width and height in CSS.
-      It can also be a flexbox child or CSS grid element.
-      The point being it needs dimensions since the <LayerCake> element will
-      expand to fill it.
-    */
-    .chart-container {
-      width: 100%;
-      height: 250px;
+  });
+
+  onDestroy(() => {
+    if (chart) {
+      chart.destroy();
     }
-  </style>
+  });
+</script>
+
+<style>
+  .chart-container {
+    width: 100%;
+    height: 250px;
+  }
+  canvas {
+    width: 100% !important;
+    height: 250px !important;
+  }
+</style>
+
+<div class="chart-container">
+  <canvas bind:this={chartCanvas}></canvas>
+</div>

@@ -13,10 +13,5 @@
       "src": "/.*",
       "dest": "/api/vercel-ssr/index.js"
     }
-  ],
-  "build": {
-    "env": {
-      "NODE_ENV": "production"
-    }
-  }
+  ]
 }

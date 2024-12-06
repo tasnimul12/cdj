@@ -9,8 +9,6 @@ date: November 24, 2024
 
 <script>
   import Wrapper from '../_components/Wrapper.svelte'
-  import BarChart from './_components/BarChart.svelte'
-  import BarChart2 from './_components/BarChart2.svelte'
   import BarStackChart from './_components/BarStackedChart.svelte'
   import loading_zone from './_images/loading-zone.png';
   import map from './_images/map.png';

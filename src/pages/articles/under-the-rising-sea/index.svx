@@ -1,5 +1,5 @@
 ---
-featured: true
+featured: false
 title: Under The Rising Sea
 description: Rising sea temperatures and climate change are disrupting marine ecosystems, threatening species like the North Atlantic Right Whale and coral reefs. Urgent conservation efforts, such as reducing ship speeds and supporting coral adaptation, are crucial, but long-term success depends on global action to mitigate climate change.
 

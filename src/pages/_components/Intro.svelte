@@ -225,7 +225,7 @@
   {#if windowWidth > 950}
     <a id="logo" href="/"><img src="/favicon.svg" alt="CDJ Logo" /></a>
   {/if}
-  <a id="title" href="/"><h1>data journal at cornell</h1></a>
+  <a id="title" href="/"><h1>cornell data journal</h1></a>
   <h2 id="blurb">{blurb}</h2>
   <nav>
     {#if windowWidth <= 950}

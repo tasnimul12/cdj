@@ -1,3 +1,5 @@
 src/pages/articles/campaign-trails/Preview_.svelte
 src/pages/articles/under-the-rising-sea/Preview_.svelte
 src/pages/articles/under-the-rising-sea/_components/BarStackedChart.svelte
+src/pages/articles/billboard-sentiments/Preview_.svelte
+src/pages/index.svelte

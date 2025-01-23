@@ -1,17 +1,26 @@
 <style>
   footer {
     margin-top: 5rem;
-    height: 7rem;
+    min-height: 7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color:#ffce00;
+    padding: 1rem;
+    flex-wrap: wrap;
   }
 
   #org {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    padding-left: 2rem;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  #org h3 {
+    font-size: 1rem;
   }
 
   #socials {
@@ -33,11 +42,25 @@
     }
   }
 
-  @media only screen and (max-width: mobile-cutoff) {
+  @media only screen and (max-width: 768px) {
+    footer {
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    #org {
+      padding: 1rem;
+      justify-content: center;
+      order: 2;
+    }
+
     #socials {
+      justify-content: center;
+      order: 1;
       a {
-        width: 2.5rem;
-        padding: 1rem;
+        width: 2rem;
+        padding: 0.75rem;
       }
     }
   }
@@ -45,7 +68,7 @@
 
 <footer>
   <div id="org">
-    <h3>This organization is a registered student organization of Cornell University.</h3>
+    <h3>This organization is a registered student organization of <a href="https://www.cornell.edu" target="_blank">Cornell University</a>.</h3>
   </div>
 
   <div id="socials">
@@ -59,7 +82,8 @@
       <img src="/socials/email-icon.svg" alt="Email">
     </a>
 
-    <!--
+
+        <!--
     <a href="https://www.facebook.com/cornelldatajournal/" target="_blank">
       <img src="/socials/facebook.svg" alt="Facebook">
     </a>

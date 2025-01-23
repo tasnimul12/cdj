@@ -15,7 +15,7 @@
       { name: 'Rishi Gurjar', year: 27, role: 'Vice President of External Affairs', desc: 'Rishi is an <i>Environment & Sustainability</i> and <i>Computer Science</i> double major. When he is home, he spends around <b>25%</b> of his waking hours gardening.' },
       { name: 'Bradley Lasker', year: 26, role: 'Social Coordinator', desc: 'Bradley is a <i>Biometry & Statistics</i> major.' },
       { name: 'Amy Chitnumsab', year: 26, role: 'Project Lead Coordinator', desc: 'Amy is a <i>Statistics</i> major.' },
-      { name: 'Neema Kudva', role: 'Faculty Mentor', desc: 'Professor Kudva is a <i>senior associate dean for academic affairs</i> and the <i>house professor and dean at Becker house</i>.' },
+      { name: 'Dana Yang', role: 'Faculty Mentor', desc: 'Dana is an assistant professor at Cornell in the department of statistics and data science.' },
     ];
     const colors = ['#A4BCD5', '#2C358B', '#F8C82D', '#642D89'];
 </script>

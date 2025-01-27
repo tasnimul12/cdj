@@ -17,7 +17,7 @@ function escapeHTML(html) {
 let rss = `<?xml version="1.0" encoding="UTF-8" ?>
   <rss version="2.0">
   <channel>
-    <title>Cornell Data Journal</title>
+    <title>old Cornell Data Journal</title>
     <link>https://cornelldatajourn.al/</link>
     <description>Offering data-driven perspectives on current events, academics, politics, and beyond.</description>`;
 
